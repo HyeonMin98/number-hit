@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".NumberActivity"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="1~30까지중 숫자 하나를 생각하세요."
+        android:layout_marginTop="30dp"
+        android:textSize="23dp"
+        android:layout_gravity="center"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text=" 04 05 06 07 12 \n 13 14 15 20 21 \n 22 23 28 29 30"
+        android:textSize="30dp"
+        android:gravity="center"
+        android:id="@+id/show_num"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="생각한 숫자가 이중에 있습니까?"
+        android:textSize="20dp"
+
+        android:gravity="center"
+        android:id="@+id/question"/>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:id="@+id/linear">
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/btn_yes"
+                android:text="yes"
+                android:layout_weight="1"/>
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="no"
+                android:id="@+id/btn_no"
+                android:layout_weight="1"
+                android:layout_marginLeft="5dp"/>
+        </LinearLayout>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="다시하기"
+            android:id="@+id/btn_restart"
+            android:visibility="gone"/>
+
+    </FrameLayout>
+
+</LinearLayout>
